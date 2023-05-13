@@ -1,0 +1,224 @@
+:root{
+    --blue: rgb(35, 35, 169);
+    --red:rgb(227, 30, 30);
+    --green: rgb(7, 119, 7);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.spy-table{
+    margin: 5px 0;
+}
+.spy-table .head-spy{
+    background-color: rgba(11, 56, 119, 0.738);
+    color: #fff;
+}
+.spy-table .body-spy{
+    background-color: rgba(20, 82, 169, 0.119);
+    color: rgb(0, 0, 0);
+}
+.table{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+table,th,td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+th,td{
+    text-align: center;
+    padding: 5px;
+}
+#head-table{
+    background-color: rgba(11, 56, 119, 0.738);
+    color: #fff;
+}
+#b-t1{
+    background-color: rgba(25, 76, 148, 0.383);
+}
+#b-t2{
+    background-color: rgba(25, 76, 148, 0.18);
+}
+#b-t3{
+    background-color: rgba(25, 76, 148, 0.383);
+}
+body{
+    width: 100%;
+    padding: 4px;
+}
+.drs-t{
+    font-size: 27px;
+    color: var(--red);
+    font-weight: bold;
+    text-align: center;
+    border: 4px double black;
+    width: 65%;
+    padding: 3px 0;
+}
+.full-drs{
+    float: right;
+    width: 64%;
+    height: 500px;
+    margin-left: 3px;
+    text-align: justify;
+}
+.mo9adima,.khatima{
+    color: var(--red);
+    font-size: 25px;
+    margin-top: 3px;
+}
+.cnt-drs{
+    font-size: 25px;
+}
+.cnt-drs .def-color{
+    color: var(--blue);
+}
+.one-large h2{
+    color: var(--red);
+    margin-top: 4px;
+}
+.one-smal{
+    color: var(--green);
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+/*JADWAML SPE.*/
+.j-title{
+    text-align: center;
+    border: 1px solid black;
+    padding: 1px;
+    width: 50%;
+    color: var(--red);
+     margin: 0 auto 10px;
+     font-weight: 555;
+     position: relative;
+}
+.full-jdwal{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+    padding: 2px;
+    height: auto;
+    margin-top: 3px;
+}
+.card1{
+    width: 30%;
+    height: 30px;
+    border: 1px solid #000;
+    height: auto;
+    padding: 3px;
+    margin-top: 3px;
+}
+.card2{
+    width: 30%;
+    height: 30px;
+    margin-top: 3px;
+    border: 1px solid #000;
+    height: auto;
+    padding: 3px;
+}
+.card3{
+    width: 30%;
+    height: 30px;
+    margin-top: 3px;
+    border: 1px solid #000;
+    height: auto;
+    padding: 3px;
+}
+.c1-t{
+    border: 1px solid #000;
+    margin-bottom: 2px;
+    text-align: center;
+    color: var(--blue);
+    font-weight: 500;
+}
+/*END JDWAL*/
+/*footer pc*/
+.footer-pc{
+    float: left;
+    width: 34%;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid black;
+    line-height: 35px;
+    margin-left: 5px;
+    animation: foot 5s infinite linear;
+}
+.contac:hover{
+    color: rgb(237, 33, 121);
+    text-decoration: underline;
+    font-weight: 600;
+}
+.nabil{
+    color: var(--blue);
+    font-weight: 600;
+}
+@keyframes foot{
+    0%{
+        transform: translate(0,0);
+        border-color: rgb(50, 50, 180);
+    }
+    50%{
+        transform: translate(0,100px);
+        border-color: rgb(50, 132, 50);
+    }
+    100%{
+        transform: translate(0,0);
+        border-color: rgb(193, 134, 23);
+    }
+}
+.mafahim{
+    height: auto;
+    width: 70%;
+    border: 1px solid;
+    padding: 3px;
+    margin: auto;
+    margin-bottom: 2px;
+}
+.mafahim h4{
+    text-align: center;
+    color: rgb(166, 15, 15);
+    font-size: 30px;
+}
+.mafahim .cnt-mafahim{
+    font-size: 25px;
+}
+.mafahim .cnt-mafahim .def-color{
+    color: var(--blue);
+}
+/*         MEDIA QURIES         */
+@media screen and (max-width:1143px){
+    .footer-pc{
+        display: none;
+    }
+    .full-drs{
+        width: 99%;
+    }
+    .drs-t{
+        width: 99%;
+        font-size: 24px;
+    }
+    .j-title{
+        width: 90%;
+    }
+    .c1-t{
+        width: 50%;
+        margin: 2px auto 0;
+    }
+    .full-jdwal{
+        display: block;
+    }
+    .card1{
+        width: 99%;
+    }
+    .card2{
+        width: 99%;
+    }
+    .card3{
+        width: 99%;
+    }
+}
